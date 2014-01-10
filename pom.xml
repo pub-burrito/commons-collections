@@ -444,11 +444,14 @@
   </dependencies>
 
   <distributionManagement>
-    <site>
-      <id>apache.website</id>
-      <name>Apache Commons Site</name>
-      <url>${commons.deployment.protocol}://people.apache.org/www/commons.apache.org/${commons.componentid}</url>
-    </site>
+	 <repository>
+	    <id>cloud.archiva.internal</id>
+	    <url>http://archiva.cliff.cloudburrito.com:8080/archiva/repository/internal/</url>
+	 </repository>
+	 <snapshotRepository>
+	    <id>cloud.archiva.snapshots</id>
+	    <url>http://archiva.cliff.cloudburrito.com:8080/archiva/repository/snapshots/</url>
+	 </snapshotRepository>
   </distributionManagement>
 
   <properties>
@@ -538,6 +541,29 @@
           </ignorePathsToDelete>
         </configuration>
       </plugin>
+      <!-- building condensed jar for use in Framework -->
+    <plugin>
+       <groupId>org.apache.maven.plugins</groupId>
+       <artifactId>maven-jar-plugin</artifactId>
+       <version>2.4</version>
+       
+       <configuration>
+           <classifier>mini</classifier>
+           <includes>
+      	      	<include>org/apache/commons/collections4/IterableMap.class</include>
+      	      	<include>org/apache/commons/collections4/KeyValue.class</include>
+      	      	<include>org/apache/commons/collections4/MapIterator.class</include>
+      	      	<include>org/apache/commons/collections4/OrderedIterator.class</include>
+      	      	<include>org/apache/commons/collections4/OrderedMap.class</include>
+      	      	<include>org/apache/commons/collections4/OrderedMapIterator.class</include>
+      	      	<include>org/apache/commons/collections4/ResettableIterator.class</include>
+      	      	<include>org/apache/commons/collections4/iterators/AbstractEmptyIterator.class</include>
+      	      	<include>org/apache/commons/collections4/iterators/EmptyOrderedIterator.class</include>
+      	      	<include>org/apache/commons/collections4/iterators/EmptyOrderedMapIterator.class</include>
+      	      	<include>org/apache/commons/collections4/map/AbstractHashedMap.class</include>
+             </includes>
+       </configuration>
+    </plugin>
     </plugins>
   </build>
 
