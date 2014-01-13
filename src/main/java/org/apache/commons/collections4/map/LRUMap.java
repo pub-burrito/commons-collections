@@ -20,6 +20,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import org.apache.commons.collections4.BoundedMap;
@@ -179,6 +180,10 @@ public class LRUMap<K, V>
         }
         moveToMRU(entry);
         return entry.getValue();
+    }
+    
+    public synchronized final Map<K,V> snapshot() {
+    	return new LinkedHashMap<K,V>( (Map<K,V>) this );
     }
 
     //-----------------------------------------------------------------------
