@@ -564,13 +564,8 @@
       	      	<include>org/apache/commons/collections4/iterators/AbstractEmptyIterator.class</include>
       	      	<include>org/apache/commons/collections4/iterators/EmptyOrderedIterator.class</include>
       	      	<include>org/apache/commons/collections4/iterators/EmptyOrderedMapIterator.class</include>
-      	      	<include>org/apache/commons/collections4/map/AbstractLinkedMap.class</include>
-      	      	<include>org/apache/commons/collections4/map/AbstractLinkedMap$LinkEntry.class</include>
-      	      	<include>org/apache/commons/collections4/map/AbstractHashedMap$HashEntry.class</include>
-      	      	<include>org/apache/commons/collections4/map/AbstractHashedMap$EntrySet.class</include>
-      	      	<include>org/apache/commons/collections4/map/AbstractHashedMap$KeySet.class</include>
-      	      	<include>org/apache/commons/collections4/map/AbstractHashedMap$Values.class</include>
-      	      	<include>org/apache/commons/collections4/map/AbstractHashedMap.class</include>
+      	      	<include>org/apache/commons/collections4/map/AbstractLinkedMap*.class</include>
+      	      	<include>org/apache/commons/collections4/map/AbstractHashedMap*.class</include>
       	      	<include>org/apache/commons/collections4/map/LRUMap.class</include>
              </includes>
        </configuration>
