@@ -545,7 +545,6 @@
     <plugin>
        <groupId>org.apache.maven.plugins</groupId>
        <artifactId>maven-jar-plugin</artifactId>
-       <version>2.4</version>
        
        <configuration>
            <classifier>mini</classifier>
@@ -562,6 +561,7 @@
       	      	<include>org/apache/commons/collections4/Put.class</include>
       	      	<include>org/apache/commons/collections4/ResettableIterator.class</include>
       	      	<include>org/apache/commons/collections4/iterators/AbstractEmptyIterator.class</include>
+      	      	<include>org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.class</include>
       	      	<include>org/apache/commons/collections4/iterators/EmptyOrderedIterator.class</include>
       	      	<include>org/apache/commons/collections4/iterators/EmptyOrderedMapIterator.class</include>
       	      	<include>org/apache/commons/collections4/map/AbstractLinkedMap*.class</include>
