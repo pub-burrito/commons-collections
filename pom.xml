@@ -567,6 +567,7 @@
       	      	<include>org/apache/commons/collections4/map/AbstractLinkedMap*.class</include>
       	      	<include>org/apache/commons/collections4/map/AbstractHashedMap*.class</include>
       	      	<include>org/apache/commons/collections4/map/LRUMap.class</include>
+      	      	<include>org/apache/commons/collections4/ListUtils*.class</include>
              </includes>
        </configuration>
     </plugin>
