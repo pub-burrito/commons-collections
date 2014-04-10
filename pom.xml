@@ -549,8 +549,10 @@
        <configuration>
            <classifier>mini</classifier>
            <includes>
+      	      	<include>org/apache/commons/collections4/Bag.class</include>
       	      	<include>org/apache/commons/collections4/BoundedMap.class</include>
                 <include>org/apache/commons/collections4/Get.class</include>
+      	      	<include>org/apache/commons/collections4/Equator.class</include>
       	      	<include>org/apache/commons/collections4/IterableMap.class</include>
                 <include>org/apache/commons/collections4/IterableGet.class</include>
       	      	<include>org/apache/commons/collections4/KeyValue.class</include>
@@ -560,6 +562,8 @@
       	      	<include>org/apache/commons/collections4/OrderedMapIterator.class</include>
       	      	<include>org/apache/commons/collections4/Put.class</include>
       	      	<include>org/apache/commons/collections4/ResettableIterator.class</include>
+      	      	<include>org/apache/commons/collections4/bag/AbstractMapBag*.class</include>
+      	      	<include>org/apache/commons/collections4/bag/HashBag.class</include>
       	      	<include>org/apache/commons/collections4/iterators/AbstractEmptyIterator.class</include>
       	      	<include>org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.class</include>
       	      	<include>org/apache/commons/collections4/iterators/EmptyOrderedIterator.class</include>
@@ -567,6 +571,7 @@
       	      	<include>org/apache/commons/collections4/map/AbstractLinkedMap*.class</include>
       	      	<include>org/apache/commons/collections4/map/AbstractHashedMap*.class</include>
       	      	<include>org/apache/commons/collections4/map/LRUMap.class</include>
+      	      	<include>org/apache/commons/collections4/sequence/CommandVisitor.class</include>
       	      	<include>org/apache/commons/collections4/ListUtils*.class</include>
              </includes>
        </configuration>
